@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Places of India</title>
+    <style>
+        /* CSS styles for header and footer */
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            font-family: 'Arial', sans-serif;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+        header h1, footer p {
+            margin: 0;
+            font-weight: normal;
+            font-size: 24px;
+            color: #fcfcfc;
+            text-transform: uppercase; /* Make text uppercase */
+            letter-spacing: 2px; /* Add spacing between letters */
+        }
+        body {
+            margin-top: 100px; /* Adjust according to header height */
+            margin-bottom: 50px; /* Adjust according to footer height */
+            background-color: #fafafa; /* Background color for the body */
+        }
+        /* CSS styles for main content */
+        .container {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .place {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            width: calc(33.33% - 20px); /* Adjust width according to the number of items per row */
+            box-sizing: border-box; /* Ensure padding and border are included in width calculation */
+            transition: transform 0.3s ease; /* Transition effect for image scaling */
+            background-color: #e7e7e5; /* Background color for the place boxes */
+        }
+        .place:hover {
+            transform: scale(1.05); /* Scale up image slightly on hover */
+        }
+        .place img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        /* CSS animation for footer */
+        @keyframes slideIn {
+            0% {
+                transform: translateY(100%);
+            }
+            50% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(100%);
+            }
+        }
+        footer {
+            animation: slideIn 3.5s ease-in-out infinite;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            padding: 20px 0;
+            color: #fff;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Historical Places of India</h1>
+    </header>
+    <div class="container">
+        <div class="place">
+            <img src="1.jpg" alt="Ellora Caves">
+            <h2>Ellora Caves</h2>
+            <p>
+                Ellora Caves, located in Maharashtra, India, is a UNESCO World Heritage Site showcasing a remarkable blend of Hindu, Buddhist, and Jain cave temples.
+                Carved out of solid rock, these 34 caves date back to the 6th to 10th centuries CE, featuring intricate sculptures and architectural marvels, attracting visitors worldwide.
+            </p>
+        </div>
+        
+        <div class="place">
+            <img src="2.jpg" alt="Taj Mahal">
+            <h2>Taj Mahal</h2>
+            <p>
+                The Taj Mahal is an ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of Agra.
+                It was commissioned in 1632 by the Mughal emperor, Shah Jahan, to house the tomb of his favorite wife, Mumtaz Mahal.
+            </p>
+        </div>
+
+        <div class= "place">
+            <img src="3.jpg" alt="Tirupati Balaji Temple">
+            <h2>Tirupati Balaji Temple</h2>
+            <p>
+                Tirupati Balaji Temple, situated in Andhra Pradesh, India, is one of the wealthiest and most visited Hindu temples globally.
+                Dedicated to Lord Venkateswara, it attracts millions of pilgrims annually.
+                The temple's iconic gopuram, intricate architecture, and spiritual significance make it a revered destination for devotees seeking blessings and fulfillment.
+            </p>
+        </div>
+
+        <div class="place">
+            <img src="4.jpg" alt="Vijay Stambh">
+            <h2>Vijay Stambh</h2>
+            <p>
+                The Vijay Stambh, also known as the "Tower of Victory," is a historic monument located in Chittorgarh, Rajasthan, India. 
+                Built in the 15th century by Maharana Kumbha of the Mewar kingdom, it commemorates his victory over the Muslim rulers of Malwa and Gujarat. 
+                Rising over 37 meters, adorned with intricate carvings and sculptures, it symbolizes valor and resilience, serving as a testament to the region's rich heritage and martial prowess.
+            </p>
+        </div>
+
+        <div class="place">
+            <img src="5.jpg" alt="Victoria Memorial">
+            <h2>Victoria Memorial</h2>
+            <p>
+                The Victoria Memorial, located in Kolkata, India, is an iconic monument built in memory of Queen Victoria. 
+                Completed in 1921, this grand marble structure blends Indo-Saracenic and British architectural styles. 
+                Surrounded by lush gardens, it houses a museum showcasing India's colonial history and artifacts from the British era.
+            </p>
+        </div>
+    </div>
+    <footer>
+        <p>Designed and Developed by Aditya Raj Singh</p>
+    </footer>
+</body>
+</html>
